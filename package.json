@@ -1,0 +1,28 @@
+{
+  "name": "camunda-modeler-plugin-example",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "browserify client/client.js > client/client-bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camunda/camunda-modeler-plugin-example.git"
+  },
+  "keywords": [
+    "camunda",
+    "modeler",
+    "plugin"
+  ],
+  "author": "Philipp Fromme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camunda/camunda-modeler-plugin-example/issues"
+  },
+  "homepage": "https://github.com/camunda/camunda-modeler-plugin-example#readme",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "camunda-modeler-plugin-helpers": "^1.7.0"
+  }
+}
