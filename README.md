@@ -10,10 +10,16 @@ Install Browserify for bundling:
 npm install
 ```
 
-Bundle client plugin:
+Building:
 
 ```
-npm run client
+npm run build
+```
+
+Development:
+
+```
+npm run auto-build
 ```
 
 
