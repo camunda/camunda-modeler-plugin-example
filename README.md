@@ -2,7 +2,7 @@
 
 This example serves as a starting point for creating your own plugin for the [Camunda Modeler](https://github.com/camunda/camunda-modeler-plugin-example).
 
-## Buidling Client Plugins
+## Building Client Plugins
 
 Install Browserify for bundling:
 
