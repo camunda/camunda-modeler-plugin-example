@@ -1,26 +1,32 @@
 # Camunda Modeler Plugin Example
 
+[![Compatible with Camunda Modeler version 2.2](https://img.shields.io/badge/Camunda%20Modeler-2.2+-blue.svg)](https://github.com/camunda/camunda-modeler)
+
+
 This example serves as a starting point for creating your own plugin for the [Camunda Modeler](https://github.com/camunda/camunda-modeler-plugin-example).
+
 
 ## Building Client Plugins
 
-Install Browserify for bundling:
+Install dependencies:
 
-```
+```sh
 npm install
 ```
 
-Building:
+Package plugin to `client/client-bundle.js`:
 
-```
-npm run build
+```sh
+npm run bundle
+# or
+npm run bundle -- --watch
 ```
 
-Development:
 
-```
-npm run auto-build
-```
+## Before you Publish
+
+* [ ] Clearly state which Camunda Modeler version your plug-in is compatible with
+* [ ] Ensure you rename the [bpmn-js extension](./client/client.js) from `PLEASE_CHANGE_ME` to something unique
 
 
 ## Additional Resources
