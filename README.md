@@ -6,7 +6,7 @@
 This example serves as a starting point for creating your own plugin for the [Camunda Modeler](https://github.com/camunda/camunda-modeler-plugin-example).
 
 
-## Building Client Plugins
+## Building
 
 Install dependencies:
 
@@ -18,7 +18,9 @@ Package plugin to `client/client-bundle.js`:
 
 ```sh
 npm run bundle
+
 # or
+
 npm run bundle -- --watch
 ```
 
@@ -26,7 +28,7 @@ npm run bundle -- --watch
 ## Before you Publish
 
 * [ ] Clearly state which Camunda Modeler version your plug-in is compatible with
-* [ ] Ensure you rename the [bpmn-js extension](./client/client.js) from `PLEASE_CHANGE_ME` to something unique
+* [ ] Ensure you rename the [bpmn-js extension](./client/module.js#L39) from `PLEASE_CHANGE_ME` to something unique
 
 
 ## Additional Resources
