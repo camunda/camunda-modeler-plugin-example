@@ -1,3 +1,7 @@
+import {
+  getPluginsDirectory
+} from 'camunda-modeler-plugin-helpers';
+
 /**
  * A bpmn-js extension service, providing the actual
  * plug-in feature.

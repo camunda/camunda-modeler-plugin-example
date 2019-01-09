@@ -28,7 +28,7 @@ npm run bundle -- --watch
 ## Before you Publish
 
 * [ ] Clearly state which Camunda Modeler version your plug-in is compatible with
-* [ ] Ensure you rename the [bpmn-js extension](./client/module.js#L39) from `PLEASE_CHANGE_ME` to something unique
+* [ ] Ensure you rename the [bpmn-js extension](./client/module.js#L43) from `PLEASE_CHANGE_ME` to something unique
 
 
 ## Additional Resources
