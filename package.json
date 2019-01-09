@@ -1,11 +1,11 @@
 {
   "name": "camunda-modeler-plugin-example",
   "version": "0.1.0",
-  "description": "",
+  "description": "An example plugin for the Camunda Modeler",
   "main": "index.js",
   "scripts": {
-    "build": "browserify client/client.js > client/client-bundle.js",
-    "auto-build": "watchify client/client.js -o client/client-bundle.js"
+    "all": "run-s bundle",
+    "bundle": "webpack ./client/client.js -o client/client-bundle.js --devtool sourcemap --mode development"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,9 @@
   },
   "homepage": "https://github.com/camunda/camunda-modeler-plugin-example#readme",
   "devDependencies": {
-    "browserify": "^14.1.0",
-    "camunda-modeler-plugin-helpers": "^1.7.0",
-    "watchify": "^3.9.0"
+    "camunda-modeler-plugin-helpers": "^2.1.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1"
   }
 }
