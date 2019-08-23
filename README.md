@@ -21,7 +21,7 @@ npm run bundle
 
 # or
 
-npm run bundle -- --watch
+npm run bundle:watch
 ```
 
 
