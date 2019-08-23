@@ -1,30 +1,22 @@
-import {
-  getPluginsDirectory
-} from 'camunda-modeler-plugin-helpers';
-
 /**
  * A bpmn-js extension service, providing the actual
  * plug-in feature.
  */
-function ExamplePluginService(eventBus, canvas) {
-  var img = document.createElement('img');
-  img.src = getPluginsDirectory() + '/camunda-modeler-plugin-example/logo.png';
-  img.width = '50';
+function ExamplePluginService(eventBus) {
+  eventBus.on('shape.added', function(context) {
+    var element = context.element;
 
-  Object.assign(img.style, {
-    position: 'absolute',
-    bottom: '20px',
-    left: '20px'
+    console.log('🎉 A shape was added!', element);
   });
 
-  canvas.getContainer().appendChild(img);
+  eventBus.on('connection.added', function(context) {
+    var element = context.element;
 
-  eventBus.on('shape.added', function(event) {
-    console.log('%c A shape was added to the diagram!', 'color: #52b415; font-size: 24px;');
+    console.log('🎊 A connection was added!', element);
   });
 }
 
-ExamplePluginService.$inject = [ 'eventBus', 'canvas' ];
+ExamplePluginService.$inject = [ 'eventBus' ];
 
 
 /**

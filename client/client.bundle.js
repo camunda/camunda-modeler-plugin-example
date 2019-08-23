@@ -115,32 +115,25 @@ Object(camunda_modeler_plugin_helpers__WEBPACK_IMPORTED_MODULE_0__["registerBpmn
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var camunda_modeler_plugin_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! camunda-modeler-plugin-helpers */ "./node_modules/camunda-modeler-plugin-helpers/index.js");
-
-
 /**
  * A bpmn-js extension service, providing the actual
  * plug-in feature.
  */
-function ExamplePluginService(eventBus, canvas) {
-  var img = document.createElement('img');
-  img.src = Object(camunda_modeler_plugin_helpers__WEBPACK_IMPORTED_MODULE_0__["getPluginsDirectory"])() + '/camunda-modeler-plugin-example/logo.png';
-  img.width = '50';
+function ExamplePluginService(eventBus) {
+  eventBus.on('shape.added', function(context) {
+    var element = context.element;
 
-  Object.assign(img.style, {
-    position: 'absolute',
-    bottom: '20px',
-    left: '20px'
+    console.log('🎉 A shape was added!', element);
   });
 
-  canvas.getContainer().appendChild(img);
+  eventBus.on('connection.added', function(context) {
+    var element = context.element;
 
-  eventBus.on('shape.added', function(event) {
-    console.log('%c A shape was added to the diagram!', 'color: #52b415; font-size: 24px;');
+    console.log('🎊 A connection was added!', element);
   });
 }
 
-ExamplePluginService.$inject = [ 'eventBus', 'canvas' ];
+ExamplePluginService.$inject = [ 'eventBus' ];
 
 
 /**
@@ -251,6 +244,8 @@ function registerBpmnJSModdleExtension(descriptor) {
 /**
  * Return the modeler directory, as a string.
  *
+ * @deprecated Will be removed in future Camunda Modeler versions without replacement.
+ *
  * @return {String}
  */
 function getModelerDirectory() {
@@ -259,6 +254,8 @@ function getModelerDirectory() {
 
 /**
  * Return the modeler plugin directory, as a string.
+ *
+ * @deprecated Will be removed in future Camunda Modeler versions without replacement.
  *
  * @return {String}
  */
@@ -269,4 +266,4 @@ function getPluginsDirectory() {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=client-bundle.js.map
+//# sourceMappingURL=client.bundle.js.map
