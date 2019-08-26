@@ -13,10 +13,10 @@ Use [npm](https://www.npmjs.com/), the [Node.js](https://nodejs.org/en/) package
 npm install
 ```
 
-To make the Camunda Modeler aware of your plug-in you must link the plug-in to the [Camunda Modeler plug-in directory](https://github.com/camunda/camunda-modeler/tree/develop/docs/plugins#plugging-into-the-camunda-modeler) via a symbolic link. 
+To make the Camunda Modeler aware of your plug-in you must link the plug-in to the [Camunda Modeler plug-in directory](https://github.com/camunda/camunda-modeler/tree/develop/docs/plugins#plugging-into-the-camunda-modeler) via a symbolic link.
 Available utilities to do that are [`mklink /d`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mklink) on Windows and [`ln -s`](https://linux.die.net/man/1/ln) on MacOS / Linux.
 
-Re-start the app in order to recognize the newly linked plug-in. 
+Re-start the app in order to recognize the newly linked plug-in.
 
 
 ## Building the Plug-in
@@ -45,8 +45,8 @@ npm run all
 
 ## Additional Resources
 
-* [Example Plugins](https://github.com/camunda/camunda-modeler-plugins)
-* [Plugins documentation](https://github.com/camunda/camunda-modeler/tree/master/docs/plugins)
+* [List of existing plug-ins](https://github.com/camunda/camunda-modeler-plugins)
+* [Plug-ins documentation](https://github.com/camunda/camunda-modeler/tree/master/docs/plugins)
 
 
 ## Licence
