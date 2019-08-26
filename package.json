@@ -6,7 +6,7 @@
   "scripts": {
     "all": "run-s bundle",
     "bundle": "webpack",
-    "bundle:watch": "webpack -w",
+    "dev": "webpack -w",
     "prepublishOnly": "run-s bundle"
   },
   "repository": {

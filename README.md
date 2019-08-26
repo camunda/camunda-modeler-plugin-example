@@ -2,33 +2,36 @@
 
 [![Compatible with Camunda Modeler version 2.2](https://img.shields.io/badge/Camunda%20Modeler-2.2+-blue.svg)](https://github.com/camunda/camunda-modeler)
 
-
 This example serves as a starting point for creating your own plugin for the [Camunda Modeler](https://github.com/camunda/camunda-modeler).
+
+
+## Setup
+
+```sh
+npm install
+npm run all
+```
 
 
 ## Building
 
-Install dependencies:
+You may spawn the development setup to watch source files and re-build the client plug-in on changes:
 
 ```sh
-npm install
+npm run dev
 ```
 
-Package plugin to `client/client-bundle.js`:
+Prepare plug-in for release, executing all necessary steps:
 
 ```sh
-npm run bundle
-
-# or
-
-npm run bundle:watch
+npm run all
 ```
 
 
 ## Before you Publish
 
 * [ ] Clearly state which Camunda Modeler version your plug-in is compatible with
-* [ ] Ensure you rename the [bpmn-js extension](./client/module.js#L43) from `PLEASE_CHANGE_ME` to something unique
+* [ ] Ensure you renamed the [bpmn-js extension](./client/bpmn-js-extension/index.js#L17) from `PLEASE_CHANGE_ME` to something unique
 
 
 ## Additional Resources
