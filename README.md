@@ -27,6 +27,12 @@ Prepare plug-in for release, executing all necessary steps:
 npm run all
 ```
 
+## Link into Camunda Modeler
+
+For the best development experience, link your plug-in into the Camunda Modeler [plugin directory](https://github.com/camunda/camunda-modeler/tree/develop/docs/plugins#plugging-into-the-camunda-modeler) via a symlink.
+
+Available utilities to do that are [`mklink /d`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/mklink) on Windows and [`ln -s`](https://linux.die.net/man/1/ln) on MacOS / Linux.
+
 
 ## Before you Publish
 
