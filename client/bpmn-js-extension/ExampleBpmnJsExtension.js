@@ -6,7 +6,7 @@
  *
  * https://github.com/bpmn-io/bpmn-js-examples
  */
-export default function ExampleExtensionService(eventBus) {
+export default function ExampleBpmnJsExtension(eventBus) {
 
   eventBus.on('shape.added', function(context) {
     var element = context.element;
@@ -21,6 +21,6 @@ export default function ExampleExtensionService(eventBus) {
   });
 }
 
-ExampleExtensionService.$inject = [
+ExampleBpmnJsExtension.$inject = [
   'eventBus'
 ];

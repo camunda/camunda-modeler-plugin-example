@@ -1,6 +1,6 @@
 # Camunda Modeler Plugin Example
 
-[![Compatible with Camunda Modeler version 2.2](https://img.shields.io/badge/Camunda%20Modeler-2.2+-blue.svg)](https://github.com/camunda/camunda-modeler)
+ [![Compatible with Camunda Modeler version 5](https://img.shields.io/badge/Modeler_Version-5.0.0+-blue.svg)](#) [![Plugin Type](https://img.shields.io/badge/Plugin%20Type-BPMN-green.svg)](#)
 
 This example serves as a starting point for creating your own plugin for the [Camunda Modeler](https://github.com/camunda/camunda-modeler).
 
@@ -39,14 +39,14 @@ npm run all
 
 ## Before you Publish
 
-* [ ] Clearly state which Camunda Modeler version your plug-in is compatible with
+* [ ] Clearly state which Camunda Modeler version your plug-in is compatible with and which type of plugin it is by changing the badges at the top of this README 
 * [ ] Ensure you renamed the [bpmn-js extension](./client/bpmn-js-extension/index.js#L17) from `PLEASE_CHANGE_ME` to something unique
-
+* [ ] Ensure you've removed the menu and style folders as well as their references in `./index.js` if you do not need them
 
 ## Additional Resources
 
 * [List of existing plug-ins](https://github.com/camunda/camunda-modeler-plugins)
-* [Plug-ins documentation](https://github.com/camunda/camunda-modeler/tree/master/docs/plugins)
+* [Plug-ins documentation](https://docs.camunda.io/docs/components/modeler/desktop-modeler/plugins/)
 
 
 ## Licence
