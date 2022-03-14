@@ -1,4 +1,4 @@
-import ExampleExtensionService from './ExampleExtensionService';
+import ExampleBpmnJsExtension from './ExampleBpmnJsExtension';
 
 /**
  * A bpmn-js module, defining all extension services and their dependencies.
@@ -15,5 +15,5 @@ import ExampleExtensionService from './ExampleExtensionService';
  */
 export default {
   __init__: [ 'PLEASE_CHANGE_ME' ],
-  PLEASE_CHANGE_ME: [ 'type', ExampleExtensionService ]
+  PLEASE_CHANGE_ME: ['type', ExampleBpmnJsExtension ]
 };
